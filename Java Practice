@@ -1,4 +1,4 @@
-// This program has a bug that causes a logic error. 
+
 // Can you find the bug?
 public class BeansInJars {
    public static void main (String [] args) {
