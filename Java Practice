@@ -15,3 +15,18 @@ public class BeansInJars {
       System.out.println(totalBeans + " total");  
    }
 }
+
+
+import java.util.Scanner;
+
+public class IntegerExpressions {
+	public static void main(String[] args) {
+		Scanner scannedInt = new Scanner(System.in);
+      int firstInt;
+      int secondInt;
+      int thirdInt;
+		
+	   firstInt = scannedInt.nextInt();
+	   secondInt = scannedInt.nextInt();
+	   thirdInt = scannedInt.nextInt();
+
