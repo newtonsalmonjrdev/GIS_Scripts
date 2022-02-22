@@ -1,5 +1,5 @@
 #code to process longitudinal coordinates into ArcMap/ArcPro
-
+//Created by Newton Salmon Jr
 # open both files
 with open('Foresty_coord_csv_auto_txt.txt', 'r') as firstfile, open('Forestry_coord_long.txt', 'w+') as secondfile:
     # read content from first file
