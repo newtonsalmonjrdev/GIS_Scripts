@@ -1,4 +1,4 @@
-# open both files
+
 with open('Foresty_coord_csv_auto_txt.txt', 'r') as firstfile, open('Foresty_coord_lat.txt', 'w') as secondfile:
     # read content from first file
     for line in firstfile:
