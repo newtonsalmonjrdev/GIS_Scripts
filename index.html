@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.99/Build/Cesium/Cesium.js"></script>
+    <link
+      href="https://cesium.com/downloads/cesiumjs/releases/1.99/Build/Cesium/Widgets/widgets.css"
+      rel="stylesheet"
+    />
+    <title>Global Genres</title>
+  </head>
+  <body>
+    <div class="page"></div>
+    <div id="loading"></div>
+
+    <!--MapDisplay-->
+    <div id="cesiumContainer" class="fullSize"></div>
+    <div id="loadingOverlay"><h1>Loading...</h1></div>
+    <div id="toolbar"></div>
+    <div class="datadisplay-outer"></div>
+    <div id="datadisplayID" class="datadisplay-inner">
+      <div id="welcomedivID" class="welcomediv">
+        <h1>Welcome to Global Genres!</h1>
+        <p id="quote"></p>
+        <br />
+        <p id="quoteauthor">~ Bob Marley</p>
+      </div>
+      <iframe
+        id="spotifyiframe"
+        style="border-radius: 12px"
+        src=""
+        width="100%"
+        height="80"
+        frameborder="0"
+        allowfullscreen="false"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+      <div class="birthlocation">
+        <p id="birthcity"></p>
+        <p id="birthcountry"></p>
+      </div>
+
+      <div class="artistinfo">
+        <p id="artistname"></p>
+        <p id="alias"></p>
+        <p id="bandgroup"></p>
+      </div>
+
+      <div class="years">
+        <p id="birthyear"></p>
+        <p id="deathyear"></p>
+      </div>
+
+      <div class="genres">
+        <p id="primarygen"></p>
+        <p id="secondgen"></p>
+        <p id="tertgen"></p>
+      </div>
+      <div class="links">
+        <a id="wikilink" href="" target="_blank"></a>
+        <a id="youtubelink" href="" target="_blank"></a>
+      </div>
+    </div>
+
+    <img
+      id="centercircle"
+      src="https://raw.githubusercontent.com/newtonsalmonjrdev/CesiumWorldMusicGenres/850cb5839e5a5c9154314f13ea37563b9c30ecf9/circle_outline.svg"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+html {
+  position: relative;
+  top: -15px;
+  height: 102%;
+  width: 102%;
+  left: -15px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+a {
+  color: rgb(30, 30, 63);
+  text-decoration-style: wavy;
+}
+
+body {
+  background: #fff top left repeat-x;
+}
+
+.fullSize {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cesium-viewer-toolbar {
+  display: none !important;
+  visibility: hide !important;
+}
+
+.cesium-viewer-fullscreenContainer {
+  display: none !important;
+  visibility: hide !important;
+}
+
+.cesium-viewer-bottom {
+  display: none !important;
+  visibility: hide !important;
+}
+
+.page {
+  display: none;
+}
+
+#loading {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  background-image: url("giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.datadisplay-outer {
+  position: absolute;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: rgb(75, 132, 200, 0.5);
+  left: 1.75%;
+  width: 15%;
+  height: 40%;
+  bottom: 1%;
+  margin-bottom: 3%;
+  min-height: 275px;
+}
+
+.datadisplay-inner {
+  position: absolute;
+  font-family: Trebuchet MS, sans-serif;
+  background-color: lightgray;
+  padding: 1%;
+  border: 5px black;
+  border-radius: 10px;
+  background-color: rgba(238, 227, 227, 0.5);
+  left: 3%;
+  width: 20%;
+  height: 45%;
+  bottom: 7%;
+  margin-bottom: 3%;
+  min-height: 275px;
+  display: none;
+}
+
+/* .datadisplay-inner div {
+  max-height: 25%;
+} */
+
+/* .datadisplay-outer div {
+  max-height: 25%;
+} */
+
+.welcomediv {
+  top: 25%;
+  display: block;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomediv h1 {
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.welcomediv p {
+  color: blue;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.genres p {
+  display: inline-block;
+  font-size: 1.25em;
+}
+.artistinfo {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.artistinfo p {
+  font-size: 1em;
+}
+
+.years p {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.birthlocation p {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.links a {
+  display: inline-block;
+  font-size: 0.75em;
+}
+
+#centercircle {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 96;
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+#bandgroup {
+  font-size: 1em;
+}
+#artistname {
+  font-size: 1.25em;
+}
+
+@media (max-width: 575px) {
+  .datadisplay-inner {
+    min-width: 150px;
+    max-height: 75px;
+    bottom: 1%;
+  }
+  .datadisplay-inner div {
+    max-height: 20px;
+  }
+
+  .datadisplay-outer {
+    display: none;
+    min-width: 130px;
+    bottom: 1%;
+  }
+  .genres {
+    font-size: 1px;
+    display: none;
+  }
+  .years {
+    font-size: 1px;
+    display: none;
+  }
+  .artistinfo p {
+    font-size: 12px;
+  }
+  .welcomediv h1 {
+    font-size: 0.75rem;
+  }
+
+  .welcomediv p {
+    font-size: 0.65rem;
+    width: 150px;
+  }
+
+  #artistname {
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  #bandgroup {
+    font-size: 12px;
+  }
+  .birthlocation p {
+    display: inline-block;
+    font-size: 12px;
+  }
+  .links a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  .datadisplay-inner {
+    min-width: 200px;
+    max-height: 75px;
+    font-size: 14px;
+  }
+  .datadisplay-inner div {
+    max-height: 35px;
+  }
+  .datadisplay-outer {
+    display: none;
+    min-width: 180px;
+  }
+
+  .birthlocation p {
+    display: inline-block;
+    font-size: 0.85em;
+  }
+  .welcomediv h1 {
+    font-size: 0.85rem;
+  }
+
+  .welcomediv p {
+    font-size: 0.75rem;
+    width: 195px;
+  }
+  .genres {
+    font-size: 1px;
+    display: none;
+  }
+  .years {
+    font-size: 1px;
+    display: none;
+  }
+  .artistinfo p {
+    font-size: 1em;
+  }
+  #artistname {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+
+  #bandgroup {
+    font-size: 1em;
+  }
+  .birthlocation p {
+    display: inline-block;
+    font-size: 1.25em;
+  }
+  .links a {
+    padding-top: 5px;
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 768px) {
+  .datadisplay-inner {
+    min-width: 200px;
+    font-size: 14px;
+    min-height: 265px;
+  }
+  .datadisplay-inner div {
+    max-height: 35px;
+  }
+  .datadisplay-outer {
+    min-width: 180px;
+  }
+  .genres {
+    font-size: 0.75em;
+    display: block;
+  }
+  .years {
+    font-size: 1em;
+    display: block;
+  }
+  .birthlocation p {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .welcomediv h1 {
+    font-size: 1rem;
+  }
+
+  .welcomediv p {
+    font-size: 0.95rem;
+    width: 195px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bikebox {
+    display: block;
+  }
+  .datadisplay-inner {
+    min-width: 200px;
+    font-size: 14px;
+    min-height: 290px;
+  }
+  .datadisplay-inner div {
+    max-height: 35px;
+  }
+  .datadisplay-outer {
+    min-width: 180px;
+  }
+  .birthlocation p {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .welcomediv h1 {
+    font-size: 1.05rem;
+  }
+
+  .welcomediv p {
+    font-size: 1.03rem;
+    width: 195px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .birthlocation p {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .welcomediv h1 {
+    font-size: 1.1rem;
+  }
+
+  .welcomediv p {
+    font-size: 1.1rem;
+    width: 195px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .birthlocation p {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .welcomediv h1 {
+    font-size: 1.25rem;
+  }
+
+  .welcomediv p {
+    font-size: 1.3rem;
+    width: 195px;
+  }
+}
